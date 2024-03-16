@@ -1,5 +1,6 @@
 
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,7 +11,7 @@ header {
 
 
 img {
-  margin-top: 180px;
+  margin-top: 150px;
   height: 400px;
   display: flex;
   
