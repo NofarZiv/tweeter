@@ -1,5 +1,5 @@
 
-header {
+header.head {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -8,6 +8,8 @@ header {
   background-color: #ff0900;
   background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 }
+
+
 
 
 img {
