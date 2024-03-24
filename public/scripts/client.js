@@ -69,7 +69,8 @@ const createTweetElement = function(tweet) {
 const renderTweets = function(tweets) {
   for (let userObj of tweets) {
     let $tweet = createTweetElement(userObj);
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
+    
   }
 }
 
@@ -91,9 +92,8 @@ $(".formTweet").submit(function(event) {
   $.ajax({ url: '/tweets', method: 'POST', data })
     .then(function () {
       console.log('Success: ', data);
+      loadTweets();
     });
-
-    
 });
 
 
@@ -101,10 +101,12 @@ const loadTweets = function() {
 
     $.ajax({ url: '/tweets', method: 'GET', dataType: "json" })
     .then(function (data) {
+      $('#tweets-container').empty();
       renderTweets(data);
+    
     });
   };
 
-loadTweets();
+
 
 });
