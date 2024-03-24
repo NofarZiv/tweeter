@@ -76,14 +76,24 @@ const renderTweets = function(tweets) {
 
 
 $(".formTweet").submit(function(event) {
+
   event.preventDefault();
+
+  if ($(`#tweet-text`).val() === "" || $(`#tweet-text`).val() === null) {
+    return alert(`Cannot post an empty tweet`);
+  }
+  if ($(`#tweet-text`).val().length > 140) {
+    return alert(`The tweet content is too long`);
+  } 
+
   let data = $( this ).serialize();
 
   $.ajax({ url: '/tweets', method: 'POST', data })
     .then(function () {
       console.log('Success: ', data);
-      
     });
+
+    
 });
 
 
