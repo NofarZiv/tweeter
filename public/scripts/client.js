@@ -48,7 +48,7 @@ const createTweetElement = function(tweet) {
       <p class="at">${tweet.user.handle}</p>
     </span>
     <div class="mainT">
-      <p>${tweet.content.text}</p>
+      <p>${escape(tweet.content.text)}</p>
     </div>
     </header>
 
@@ -81,11 +81,13 @@ $(".formTweet").submit(function(event) {
   event.preventDefault();
 
   if ($(`#tweet-text`).val() === "" || $(`#tweet-text`).val() === null) {
-    return alert(`Cannot post an empty tweet`);
-  }
-  if ($(`#tweet-text`).val().length > 140) {
-    return alert(`The tweet content is too long`);
+    return $(`.error`).text('⚠️ Please add text. Cannot post an empty Tweet. ⚠️').slideDown();
   } 
+  if ($(`#tweet-text`).val().length > 140) {
+    return $(`.error`).text('⚠️ Tweet is too long. Maximum 140 characters allowed. ⚠️').slideDown();
+  } 
+
+  $(`.error`).slideUp();
 
   let data = $( this ).serialize();
 
@@ -107,6 +109,10 @@ const loadTweets = function() {
     });
   };
 
-
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
 });
