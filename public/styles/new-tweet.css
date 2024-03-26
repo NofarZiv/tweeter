@@ -8,6 +8,7 @@
   align-items: flex-start;
   background-color: #f4f1ec;
   margin-top: 25px;
+  
 }
 
 
@@ -27,8 +28,8 @@ textarea {
   outline: none;
   resize: none;
   display: flex;
-  align-self: center;
-  width: 1840px;
+  width: 90vw;
+  
   height: 50px;
   background-color: #f4f1ec;
   border-bottom: solid;
@@ -62,8 +63,15 @@ div.error {
 }
 
 
-⚠️ {
-  padding: 0.8em 0.3em;
-  color: red;
-  size: larger;
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 55%;
+    float: right;
+    margin-top: 230px;
+  }
+
+  textarea {
+    width: 50vw;
+  }
+
 }
