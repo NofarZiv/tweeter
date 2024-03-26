@@ -10,9 +10,7 @@ header.head {
 }
 
 
-
-
-img {
+img.avatar {
   margin-top: 150px;
   height: 400px;
   display: flex;
@@ -25,3 +23,23 @@ h2 {
   color: white;
 }
 
+@media only screen and (min-width: 1024px) {
+  header.head {
+    width: 30%;
+    height: 440px;
+    float: left;
+    margin-top: 250px;
+    margin-left: 75px;
+  }
+
+  img.avatar {
+    padding: 30px;
+    height: 350px;
+    margin-bottom: -20px;
+  }
+
+  h2 {
+    margin-bottom: 180px;
+    
+  }
+}
