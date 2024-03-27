@@ -1,8 +1,7 @@
 
 
-
 .container {
-  padding: 1.40em;
+  padding: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,9 +18,11 @@
 
 }
 
+
 label {
   font-weight: 600;
 }
+
 
 textarea {
   border: none;
@@ -29,13 +30,13 @@ textarea {
   resize: none;
   display: flex;
   width: 90vw;
-  
   height: 50px;
   background-color: #f4f1ec;
   border-bottom: solid;
   font-size: 20px;
   font-weight: 600;
 }
+
 
 main div {
   margin-top: 20px;
@@ -44,6 +45,7 @@ main div {
   justify-content: space-between;
   font-family: "Bungee", sans-serif;
 }
+
 
 button {
   background-color: #4056A1;
@@ -58,7 +60,7 @@ div.error {
   color: red;
   border: solid red 0.2em;
   margin-bottom: 2em;
-  width: 1850px;
+  width: 90vw;
   padding: 0.5em;
 }
 
@@ -74,4 +76,7 @@ div.error {
     width: 50vw;
   }
 
+  div.error {
+    width: 50vw;
+  }
 }
