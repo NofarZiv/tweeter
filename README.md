@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of the page on desktop."](https://github.com/NofarZiv/tweeter/blob/master/docs/main-page-desktop-vs.png?raw=true)
+!["Screenshot of the page on a phone screen."](https://github.com/NofarZiv/tweeter/blob/master/docs/main-page-phone-vs.png?raw=true)
+!["Screenshot of the error message."](https://github.com/NofarZiv/tweeter/blob/master/docs/error-msg.png?raw=true)
