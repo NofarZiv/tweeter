@@ -13,22 +13,23 @@ nav {
   position: fixed;
 }
 
+
 .tweeter {
   font-family: "Bungee", sans-serif;
   font-size: 35px;
 }
 
+
 .new {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 
 nav span.new i {
   margin-top: 5px;
-  color: red;
+  color: #4056A1;
 }
 
 
@@ -38,4 +39,8 @@ nav span.new i {
     background-image: none;
   }
 
+  nav span.new i {
+    margin-top: 5px;
+    color: red;
+  }
 }
