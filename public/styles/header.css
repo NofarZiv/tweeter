@@ -14,14 +14,14 @@ img.avatar {
   margin-top: 150px;
   height: 400px;
   display: flex;
-  
-
 }
+
 
 h2 {
   margin-top: -25px;
   color: white;
 }
+
 
 @media only screen and (min-width: 1024px) {
   header.head {
