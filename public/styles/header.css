@@ -1,6 +1,7 @@
 
 header.head {
   width: 100%;
+  height: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -12,7 +13,7 @@ header.head {
 
 img.avatar {
   margin-top: 150px;
-  height: 400px;
+  height: 200px;
   display: flex;
 }
 
@@ -20,6 +21,7 @@ img.avatar {
 h2 {
   margin-top: -25px;
   color: white;
+  font-size: larger;
 }
 
 
