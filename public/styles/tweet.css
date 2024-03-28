@@ -6,10 +6,9 @@ article.tweet {
   display: flex;
   flex-direction: column;
   border: solid;
-  width: 90vw;
   height: 275px;
   margin-top: 75px;
-  
+  width: 86vw;
 }
 
 
